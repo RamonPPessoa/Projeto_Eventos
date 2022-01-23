@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
-        <link rel="stylesheet" href="/css/styles.css">
-        <script src="/js/scripts.js"></script>
+@section('title','HDC events')
 
-       
-    </head>
-    <body class="antialiased">
+@section('content')
        <h1>Algum titulo</h1>
        <img src="/img/banner.jpg" alt="">
             @if(10>15)
@@ -43,6 +35,6 @@
                 echo $name;
             @endphp
             {{--este é o comentário do blade--}}
+@endsection
 
-    </body>
-</html>
+  
